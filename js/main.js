@@ -1,6 +1,5 @@
 // Timothy Boyd portfolio — shared behavior
 document.addEventListener('DOMContentLoaded', () => {
-
   // mobile nav toggle
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
