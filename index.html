@@ -3,246 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timothy Boyd — GIS &amp; Big Data Analytics</title>
-<meta name="description" content="Portfolio of Timothy Boyd — GIS analyst and Big Data Analytics graduate student at SDSU. Computer vision for traffic safety, homelessness spatial analytics, and interactive dashboards.">
+<title>Timothy Boyd — Internship Projects</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Manrope:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="home">
+<body>
 
-<div class="graticule"></div>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="brand">
-      <span class="name">Timothy Boyd</span>
-      <span class="coords">32.7757°N · GIS / BIG DATA</span>
+<div class="nav-wrap">
+  <nav class="topnav">
+    <a href="index.html" class="wordmark">
+      <span><span class="accent">TIM</span>BOYD</span>
+      <small>GIS &amp; Urban Analytics — San Diego, CA</small>
     </a>
-    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html" data-page="home" class="active"><span class="tick">▸</span>Home</a></li>
-      <li><a href="projects.html" data-page="projects"><span class="tick">▸</span>Fieldwork</a></li>
-      <li><a href="dashboards.html" data-page="dashboards"><span class="tick">▸</span>Dashboards</a></li>
-      <li><a href="resume.html" data-page="resume"><span class="tick">▸</span>Resume</a></li>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Internship Projects</a></li>
+      <li><a href="class-projects.html">Class Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
     </ul>
-  </div>
-</nav>
+    <!-- EDIT: point this at your email or preferred contact method -->
+    <a href="mailto:your.email@sdsu.edu" class="cta-pill">Let's Connect</a>
+  </nav>
+</div>
 
-<header class="hero">
-  <div class="hero-topo" aria-hidden="true">
-    <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice">
-      <defs>
-        <filter id="topo" x="-20%" y="-20%" width="140%" height="140%">
-          <feTurbulence type="fractalNoise" baseFrequency="0.010 0.016" numOctaves="4" seed="11" result="n"/>
-          <feDisplacementMap in="SourceGraphic" in2="n" scale="70" xChannelSelector="R" yChannelSelector="G"/>
-        </filter>
-        <radialGradient id="elev" cx="30%" cy="35%" r="75%">
-          <stop offset="0%" stop-color="#274a3d"/>
-          <stop offset="55%" stop-color="#16302670"/>
-          <stop offset="100%" stop-color="#0b1613" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <rect width="1400" height="900" fill="url(#elev)"/>
-      <g fill="none" stroke="#2e5645" stroke-width="1.1" filter="url(#topo)" opacity="0.85">
-        <circle cx="420" cy="330" r="60"/>
-        <circle cx="420" cy="330" r="110"/>
-        <circle cx="420" cy="330" r="160"/>
-        <circle cx="420" cy="330" r="210"/>
-        <circle cx="420" cy="330" r="260"/>
-        <circle cx="420" cy="330" r="310"/>
-        <circle cx="420" cy="330" r="360"/>
-        <circle cx="420" cy="330" r="410"/>
-        <circle cx="420" cy="330" r="460"/>
-      </g>
-      <g fill="none" stroke="#20402f" stroke-width="1" filter="url(#topo)" opacity="0.55">
-        <circle cx="1080" cy="620" r="50"/>
-        <circle cx="1080" cy="620" r="100"/>
-        <circle cx="1080" cy="620" r="150"/>
-        <circle cx="1080" cy="620" r="200"/>
-        <circle cx="1080" cy="620" r="250"/>
-        <circle cx="1080" cy="620" r="300"/>
-      </g>
-      <g stroke="#cc7c47" stroke-width="1" opacity="0.5">
-        <line x1="0" y1="200" x2="1400" y2="200"/>
-        <line x1="0" y1="600" x2="1400" y2="600"/>
-      </g>
-      <circle cx="420" cy="330" r="4" fill="#cc7c47"/>
-      <circle cx="1080" cy="620" r="4" fill="#5b9bc9"/>
-    </svg>
-  </div>
-  <div class="hero-fade"></div>
-
-  <div class="wrap">
-    <div class="hero-tag">San Diego, CA · Field notes / 2026</div>
-    <h1>Mapping data<br>onto <em>real&nbsp;streets</em>,<br>real cities.</h1>
-    <p class="hero-lede">
-      I'm a GIS analyst and second-year Big Data Analytics graduate student at San Diego State
-      University. I build the pipelines that turn raw drone footage and civic reports into
-      maps, models, and dashboards people can actually act on.
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Timothy Boyd</div>
+    <h1>🌐 Hi, I'm Tim 🌐</h1>
+    <p class="type-line">I map cities and build data tools<span class="cursor"></span></p>
+    <p class="lede">
+      GIS dashboards, encampment-report analytics, and applied
+      computer-vision work built during my internship and research
+      assistantships at SDSU. Every project below is embedded live from
+      its source dashboard.
     </p>
-    <div class="btn-row">
-      <a href="projects.html" class="btn">Survey the fieldwork</a>
-      <a href="resume.html" class="btn ghost">View resume</a>
-    </div>
-
-    <div class="hero-meta">
-      <div>
-        <div class="val">SDSU · M.S. Big Data Analytics</div>
-        <div class="lbl">Class of 2027</div>
-      </div>
-      <div>
-        <div class="val">Hillside Computer Vision — STAR&#8209;LAB</div>
-        <div class="lbl">Project Lead, drone-based CV</div>
-      </div>
-      <div>
-        <div class="val">NSF SDHEART / PITC</div>
-        <div class="lbl">Homelessness spatial analytics</div>
+    <div class="hero-actions">
+      <a href="resume.pdf" class="btn-primary">Download Resume</a>
+      <div class="social-row">
+        <!-- EDIT: point these at your real profiles -->
+        <a href="#" aria-label="GitHub" title="GitHub"><span style="font-family:var(--font-mono); font-size:0.7rem;">GH</span></a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn"><span style="font-family:var(--font-mono); font-size:0.7rem;">in</span></a>
+        <a href="mailto:your.email@sdsu.edu" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2 2v.5l8 5.5 8-5.5V7H4zm16 2.4-7.4 5.1a1 1 0 0 1-1.2 0L4 9.4V17h16V9.4z"/></svg>
+        </a>
       </div>
     </div>
   </div>
-</header>
+
+  <div class="hero-globe">
+    <div class="globe-wrap">
+      <div class="globe-glow"></div>
+      <svg class="globe-svg" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="globeShade" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#2a2f52"/>
+            <stop offset="60%" stop-color="#161a30"/>
+            <stop offset="100%" stop-color="#0b0d17"/>
+          </radialGradient>
+        </defs>
+        <circle cx="180" cy="180" r="150" fill="url(#globeShade)" stroke="#ff2f87" stroke-opacity="0.55" stroke-width="1.5"/>
+        <g class="globe-graticule" stroke="#ff8fc2" stroke-opacity="0.35" fill="none" stroke-width="1">
+          <ellipse cx="180" cy="180" rx="150" ry="150"/>
+          <ellipse cx="180" cy="180" rx="150" ry="100"/>
+          <ellipse cx="180" cy="180" rx="150" ry="50"/>
+          <ellipse cx="180" cy="180" rx="150" ry="15"/>
+          <ellipse cx="180" cy="180" rx="100" ry="150"/>
+          <ellipse cx="180" cy="180" rx="50" ry="150"/>
+          <ellipse cx="180" cy="180" rx="15" ry="150"/>
+          <line x1="30" y1="180" x2="330" y2="180" stroke-opacity="0.45"/>
+          <line x1="180" y1="30" x2="180" y2="330" stroke-opacity="0.45"/>
+        </g>
+        <circle class="globe-marker" cx="150" cy="210" r="4" fill="#ff2f87"/>
+        <circle class="globe-marker d2" cx="230" cy="150" r="4" fill="#ff2f87"/>
+        <circle class="globe-marker d3" cx="200" cy="240" r="4" fill="#ff2f87"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <div class="ticker-item"><span class="dot"></span>ArcGIS Online</div>
+    <div class="ticker-item"><span class="dot"></span>Python</div>
+    <div class="ticker-item"><span class="dot"></span>R / RStudio</div>
+    <div class="ticker-item"><span class="dot"></span>ArcGIS StoryMaps</div>
+  </div>
+</div>
 
 <main>
 
-  <section class="section tight">
-    <div class="wrap">
-      <div class="coordline">Field of Work</div>
-      <div class="section-head">
-        <h2>Two disciplines, one map</h2>
-        <p>Everything here sits at the intersection of geography and data science — spatial
-        statistics, computer vision, and interactive cartography applied to problems that
-        affect real neighborhoods.</p>
+  <section id="about">
+    <div class="section-header align-left">
+      <div class="eyebrow">Get to Know Me</div>
+      <h2>🌐 About <span class="accent">Me</span> 🌐</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="lede">
+          I'm a graduate student and GIS analyst who enjoys turning messy
+          civic and geospatial data into dashboards people actually use —
+          from encampment-report tracking to drone-based traffic safety
+          analysis.
+        </p>
+        <div class="stat-grid">
+          <div class="stat-block">
+            <div class="num">2+</div>
+            <div class="label">Years in GIS &amp; Analytics</div>
+          </div>
+          <div class="stat-block">
+            <div class="num">10+</div>
+            <div class="label">Dashboards Built</div>
+          </div>
+          <div class="stat-block">
+            <div class="num">1</div>
+            <div class="label">Drone CV Research Project</div>
+          </div>
+          <div class="stat-block">
+            <div class="num">M.S.</div>
+            <div class="label">Candidate, SDSU Geography</div>
+          </div>
+        </div>
       </div>
 
-      <div class="preview-grid">
-        <a href="projects.html#starlab" class="preview-card">
-          <div class="preview-media">
-            <img src="assets/img/yolo-tracking.png" alt="YOLOv8 tracked drone footage of an intersection">
-            <span class="tag">Computer Vision</span>
-          </div>
-          <div class="preview-body">
-            <h3>STAR‑LAB Near‑Miss Detection</h3>
-            <p>Drone-based YOLOv8 tracking and PET conflict analysis for traffic safety.</p>
-            <span class="preview-link">View project →</span>
-          </div>
-        </a>
-
-        <a href="projects.html#sdheart" class="preview-card">
-          <div class="preview-media">
-            <img src="assets/img/heatmap-analysis.png" alt="Kernel density heatmap of 311 homelessness reports across San Diego">
-            <span class="tag alt">Spatial Analytics</span>
-          </div>
-          <div class="preview-body">
-            <h3>SDHEART 311 Report Analysis</h3>
-            <p>Topic modeling and kernel density mapping of homelessness-related 311 reports.</p>
-            <span class="preview-link">View project →</span>
-          </div>
-        </a>
-
-        <a href="dashboards.html" class="preview-card">
-          <div class="preview-media">
-            <img src="assets/img/topic-timeline.png" alt="Interactive monthly topic activity heatmap, 2019 to 2025">
-            <span class="tag">Dashboards</span>
-          </div>
-          <div class="preview-body">
-            <h3>Live ArcGIS &amp; p5.js Dashboards</h3>
-            <p>Census-tract density, swipe comparisons, and a 55-year national crime map.</p>
-            <span class="preview-link">Open dashboards →</span>
-          </div>
-        </a>
+      <div class="about-side">
+        <div class="info-card">
+          <h4>My Approach</h4>
+          <p>Grounding every dashboard in real civic data, and making sure the map or chart actually answers the question someone came with.</p>
+        </div>
+        <div class="info-card">
+          <h4>The Mission</h4>
+          <p>Turning complex spatial and sensor data — encampment reports, drone footage, survey counts — into clear, decision-ready visualizations.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section tight">
-    <div class="wrap">
-      <div class="coordline">Live Previews</div>
-      <div class="section-head">
-        <h2>Pulled straight from the live dashboards</h2>
-        <p>These are scaled-down, live renders of the actual embeds — open any of them full size
-        on the dashboards page.</p>
-      </div>
+  <section id="projects">
+    <div class="section-header">
+      <div class="eyebrow">Internship Work</div>
+      <h2>Project <span class="accent">Dashboards</span></h2>
+      <p>32.7157°N, 117.1611°W — San Diego, CA</p>
+    </div>
 
-      <div class="embed-preview-grid">
-        <a href="dashboards.html" class="embed-preview">
-          <div class="embed-mini">
-            <span class="live-dot">Live</span>
-            <iframe src="https://experience.arcgis.com/experience/bb7d640682a44ad8aa7b4820976371ef/" loading="lazy" title="SDHEART Homeless Density preview" tabindex="-1"></iframe>
-            <div class="scrim"></div>
-          </div>
-          <div class="embed-preview-body">
-            <h4>Density &amp; Resources</h4>
-            <span>SDHEART · Census tract</span>
-          </div>
-        </a>
+    <div class="project-grid">
 
-        <a href="dashboards.html" class="embed-preview">
-          <div class="embed-mini">
-            <span class="live-dot">Live</span>
-            <iframe src="https://experience.arcgis.com/experience/df00cf0d68464f968184e6ae2a174918/" loading="lazy" title="PITC Swipe Map preview" tabindex="-1"></iframe>
-            <div class="scrim"></div>
-          </div>
-          <div class="embed-preview-body">
-            <h4>PITC Swipe Map</h4>
-            <span>Density comparison</span>
-          </div>
-        </a>
+      <!-- Project 1: 311 vs DTP encampment comparison -->
+      <article class="project-card">
+        <div class="card-head">
+          <div class="card-tag">ArcGIS Online · Dashboard</div>
+          <h3>311 vs. Downtown Partnership Encampment Reports</h3>
+          <p>
+            Monthly comparison of citywide 311 encampment reports against
+            Downtown Partnership site counts, 2024–2025.
+          </p>
+        </div>
+        <iframe
+          class="embed-frame"
+          src="https://timothyboyd.github.io/dashboard_embeds/Compare_2024_Cards.html"
+          title="311 vs DTP Encampment Comparison 2024"
+          loading="lazy">
+        </iframe>
+      </article>
 
-        <a href="dashboards.html" class="embed-preview">
-          <div class="embed-mini">
-            <span class="live-dot">Live</span>
-            <iframe src="https://experience.arcgis.com/experience/6724171f65b94c369ee94e91ca425cb8/" loading="lazy" title="PITC Density per year preview" tabindex="-1"></iframe>
-            <div class="scrim"></div>
-          </div>
-          <div class="embed-preview-body">
-            <h4>Density Per Year</h4>
-            <span>Time series · by tract</span>
-          </div>
-        </a>
+      <!-- Project 2: 311 monthly trend dashboard -->
+      <article class="project-card">
+        <div class="card-head">
+          <div class="card-tag">ArcGIS Online · Dashboard</div>
+          <h3>311 Encampment Reports by Month</h3>
+          <p>
+            Year-over-year monthly trend of citywide 311 encampment reports,
+            2024 vs. 2025.
+          </p>
+        </div>
+        <iframe
+          class="embed-frame"
+          src="https://timothyboyd.github.io/dashboard_embeds/DTP_2024_chart.html"
+          title="311 Monthly Trend Chart"
+          loading="lazy">
+        </iframe>
+      </article>
 
-        <a href="dashboards.html" class="embed-preview">
-          <div class="embed-mini">
-            <span class="live-dot">Live</span>
-            <iframe src="https://editor.p5js.org/tboyd4238/full/aKO_qMs6G" loading="lazy" title="Temporal crime map preview" tabindex="-1"></iframe>
-            <div class="scrim"></div>
-          </div>
-          <div class="embed-preview-body">
-            <h4>Temporal Crime Map</h4>
-            <span>p5.js · 1960–2014</span>
-          </div>
-        </a>
-      </div>
+      <!-- Placeholder card: add more internship projects the same way -->
+      <article class="project-card">
+        <div class="card-head">
+          <div class="card-tag">Add Project</div>
+          <h3>Next Internship Embed</h3>
+          <p>
+            Duplicate a project-card block and swap the iframe src to add
+            another dashboard here.
+          </p>
+        </div>
+        <div class="embed-placeholder">
+          <span>+ embed goes here</span>
+        </div>
+      </article>
+
     </div>
   </section>
 
-  <section class="section tight">
-    <div class="wrap">
-      <div class="coordline">Resume</div>
-      <div class="legend-grid" style="grid-template-columns:1fr;">
-        <a href="resume.html" class="legend-card" style="text-decoration:none; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-          <div>
-            <h3 style="margin-bottom:6px;">Read the full resume →</h3>
-            <p style="margin:0;">Education, experience, and skills — on-page, with a one-page download.</p>
-          </div>
-          <span class="btn ghost" style="pointer-events:none;">View resume</span>
-        </a>
-      </div>
+  <section id="storymap-final">
+    <div class="section-header">
+      <div class="eyebrow">Capstone</div>
+      <h2>Final <span class="accent">Project</span></h2>
+      <p>status: pending</p>
+    </div>
+
+    <div class="storymap-slot storymap-slot--large">
+      <div class="slot-label">Reserved — ArcGIS StoryMaps</div>
+      <h3>Final Project StoryMap</h3>
+      <p>
+        This slot is reserved for the embedded ArcGIS StoryMaps final
+        project. Once published, replace this block with an
+        <code>&lt;iframe&gt;</code> pointed at the StoryMap's public embed
+        URL — same pattern as the project embeds above.
+      </p>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© 2026 Timothy Boyd · San Diego State University</p>
-    <ul class="footer-links">
-      <li><a href="mailto:tboyd4238@sdsu.edu">tboyd4238@sdsu.edu</a></li>
-      <li><a href="tel:6197354713">(619) 735-4713</a></li>
-    </ul>
-  </div>
+<footer>
+  Built &amp; maintained by Timothy Boyd · San Diego State University
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
